@@ -1,6 +1,5 @@
 const express = require("express");
-const categorieSchema = require("../models/categorie");
-
+const categorieSchema = require("../models/categoria");
 const router = express.Router();
 
 
