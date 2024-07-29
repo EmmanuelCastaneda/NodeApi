@@ -1,0 +1,48 @@
+###
+POST http://localhost:4000/api/user HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre":"king",
+    "edad":18,
+    "correo":"burguer@gmail.com",
+    "contrasenia":"135556"
+}
+
+###
+
+POST http://localhost:4000/api/product HTTP/1.1
+Content-Type: application/json
+
+{
+  "nombre": "doble queso",
+  "precio": 34758,
+  "descripcion": "ESTA BUENA",
+  "categoria": "66a4250c90bcae73e78c89v"
+}
+
+###
+
+POST http://localhost:4000/api/categorie HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre":"alimentos"
+}
+
+###
+GET http://localhost:4000/api/user HTTP/1.1
+###
+GET http://localhost:4000/api/user/660f5fa3d02ec4955d7b704a HTTP/1.1
+###
+PUT http://localhost:4000/api/user/660f5fa3d02ec4955d7b704a HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre":"mcdonals",
+    "edad":30,
+    "correo":"mejor@gmail.com"
+}
+###
+
+DELETE http://localhost:4000/api/user/66a58ea7e3af2c9fd36dbf64 HTTP/1.1
